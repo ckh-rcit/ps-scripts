@@ -12,7 +12,7 @@ $Applications | ForEach-Object {
 
 # Delete all files (if possible)
 
-Write-Output 'Removendo cache...';
+Write-Output 'Clearing cache...';
 Get-ChildItem $CachePath | ForEach-Object { 
     Remove-Item -LiteralPath $_.FullName -Force -Recurse -ErrorAction SilentlyContinue
 }
